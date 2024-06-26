@@ -52,7 +52,7 @@ const getNoti2 = async () => {
 getNoti2().then(data => {
   console.log(data);
 });
-*/
+
 const getUn = async () => {
   const response = await await fetch("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json");
   const data = await response.json();
@@ -86,3 +86,24 @@ const init2 = async () => {
   }
 }
 init2()
+*/
+
+function input_type(value) {
+  // write your code here
+  if (typeof value === "string"){
+    return "string";
+  } else if (Number.isInteger(Number(value))){
+    return "integer"
+  }
+  return "float";
+};
+
+console.log(input_type(21.21))
+
+
+
+function gravity_flip(columns) {
+  // write your code here
+  return columns.sort((a,b) => a - b);
+}
+console.log(gravity_flip([2, 3, 8]))
