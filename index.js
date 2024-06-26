@@ -86,7 +86,7 @@ const init2 = async () => {
   }
 }
 init2()
-*/
+
 
 function input_type(value) {
   // write your code here
@@ -107,3 +107,65 @@ function gravity_flip(columns) {
   return columns.sort((a,b) => a - b);
 }
 console.log(gravity_flip([2, 3, 8]))
+
+for (let counter = 1; counter <= 10; counter++){
+  console.log(counter)
+}
+const people = ["Sam", "Alex"];
+for (let index = 0; index < people.length; index++){
+  console.log(people[index])
+}
+people.forEach(person => {
+  console.log(person);
+})
+
+for(let number = 0; number <= 20; number += 2){
+  console.log(number)
+}
+
+for(const person of people){
+  console.log(person)
+}
+
+let sum = 0;
+
+for (const number of numbers) {
+    sum += number;
+    if (sum >= 500) {
+        break;
+    }
+}
+    
+const items = [1, 2, 3, 4];
+
+for (const item of items) {
+    if (item % 2 === 0) {
+        console.log("Even number, skip the iteration");
+        continue;
+    }
+    console.log("Odd number", item);
+}
+const itemss = document.querySelectorAll(".items");
+for (const item of items) {
+    console.log(item.textContent);
+}
+    
+   const person = {
+    id: 1,
+    name: "Alex"
+   }
+   for (const key in person){
+    //console.log(key);
+    console.log(person[key])
+   }
+    */
+   function init() {
+    console.log("A");
+    console.log("B");
+}
+
+init();
+
+setTimeout(function logA() {
+  console.log("Aييي");
+}, 5_000);
